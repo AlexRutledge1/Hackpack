@@ -9,7 +9,7 @@ public class towersOfHanoi {
 	
 	static void solve(int count, char s, char d, char i) {
 		if(count == 1) {
-			System.out.printf("Move top disc from pole %c to pole %c\n", s, d);
+			System.out.printf("Move top disc from pole %c to pole %c%n", s, d);
 		} else {
 			solve(count-1, s, i, d);
 			solve(1, s, d, i);
